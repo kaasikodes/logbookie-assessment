@@ -1,0 +1,100 @@
+
+.app{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+.app__header{
+    background-color: rgb(35, 177, 66);
+    height: 55px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    
+
+}
+.app__main{
+    flex: 2;
+    
+
+}
+.app__footer{
+    background-color: rgb(209, 205, 205);
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+.footer-section{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.footer-logo{
+    width: 180px;
+    margin-right: 300px;
+
+
+}
+.app__header div.container-fluid, .app__header div nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+
+}
+.app__header nav ul, .app__footer  ul,  .app__main  ul{
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+}
+.app__header nav ul a, .app__footer  ul a, .app__main  ul a{
+    text-decoration: none;
+    color: inherit;
+
+}
+
+.footer-section .nav-item{
+    color: rgb(12, 12, 12);
+    margin-right: 30px;
+}
+.nav-item{
+    margin-right: 20px;
+    color: #fff;
+    text-transform: uppercase;
+}
+.nav-item:last-child{
+    margin-right: 0;
+}
+.nav-logo{
+    width: 80px;
+}
+.middle-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.nav-logo img, .footer-logo img{
+    object-fit: contain;
+    width: 100%;
+}
+nav a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav-item-icon{
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 5px;
+    background: #1c1e1ce5;
+}

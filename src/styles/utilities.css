@@ -1,0 +1,45 @@
+.container{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    
+}
+.container-fluid{
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 30px;
+    
+}
+.container-footer{
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 30px;
+    
+}
+.text-center{
+    text-align: center;
+}
+.d-flex{
+    display: flex;
+}
+
+
+
+.pt-100, .py-100{
+    padding-top: 50px;
+}
+
+.pb-100, .py-100{
+    padding-bottom: 50px;
+}
+
+.pt-50, .py-50{
+    padding-top: 50px;
+}
+
+.pb-50, .py-50{
+    padding-bottom: 50px;
+}
