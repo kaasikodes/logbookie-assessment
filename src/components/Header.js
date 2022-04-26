@@ -1,9 +1,15 @@
 
 
-import {Link} from "react-router-dom";
+import {Link, useLocation} from "react-router-dom";
 import BrandLogo from '../assets/brand_logo_white.svg'
+import {FiEdit2} from "react-icons/fi"
+import {FaUser} from "react-icons/fa"
+import {BiMenu} from "react-icons/bi"
 
 const Header = () => {
+  const location = useLocation();
+  
+  const isHomePage = location.pathname === "/";
     
     return (
         <header className = "app__header">
@@ -11,7 +17,7 @@ const Header = () => {
             <nav>
               <ul className="left-section">
                 <li className="nav-item">
-                  ''''
+                  <BiMenu className="nav-menu-icon"/>
                 </li>
                 <li className="nav-item">
                   <Link to = "/dashboard">Dashboard</Link>
@@ -22,25 +28,25 @@ const Header = () => {
 
 
               </ul>
-              <Link to = "/" className="middle-section">
+              {!isHomePage && <Link to = "/" className="middle-section">
                 <div className="nav-logo">
                     <img alt = "Expanzo logo" src={BrandLogo}/>
 
                 </div>
 
-              </Link>
+              </Link>}
               <ul className="right-section">
             
                 <li className="nav-item">
                   <Link to = "/login" className="d-flex">
-                    <div className="nav-item-icon"> <span>ro</span></div>
-                    <span>Login</span>
+                    <div className="nav-item-icon"> <FiEdit2/></div>
+                    <span>login</span>
                     
                   </Link>
                 </li>
                 <li className="nav-item">
                 <Link to = "/register" className="d-flex">
-                    <div className="nav-item-icon"></div>
+                    <div className="nav-item-icon"><FaUser/></div>
                     <span>Registration</span>
                 </Link>
                 </li>

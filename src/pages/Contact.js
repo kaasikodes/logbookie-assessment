@@ -1,5 +1,7 @@
 import ContactSection from "../components/ContactSection"
 import "../styles/contact.css"
+import {GoLocation} from "react-icons/go"
+import {GrMail} from "react-icons/gr"
 
 const Contact = () => {
   return (
@@ -10,8 +12,8 @@ const Contact = () => {
                 DHO s.r.o <br/>
                 Borivojova 878/35 <br/>
                 130 00 Praha 3
-            </p>} title = "Headquaters"/>
-            <ContactSection content = "info@expanzo.com" title={"Email"}/>
+            </p>} title = "Headquaters" icon = {<GoLocation/>}/>
+            <ContactSection content = "info@expanzo.com" title={"Email"} icon = {<GrMail/>}/>
         </div>
     </div>
   )

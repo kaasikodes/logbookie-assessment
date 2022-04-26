@@ -5,7 +5,8 @@ const ContactSection = ({title,icon, content}) => {
     <div className="contact-section">
         <div className="contact-title">
             {/* icon above */}
-            <span>{title}</span>
+            {icon}
+            <span className='ml-10'>{title}</span>
         </div>
         <div className="contact-content">
             {content}

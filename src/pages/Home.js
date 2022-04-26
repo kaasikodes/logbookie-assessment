@@ -1,9 +1,12 @@
-import {Link} from "react-router-dom";
+import {Link, useLocation} from "react-router-dom";
 
 import "../styles/home.css"
 import BrandLogo from "../assets/brand_logo_dark.svg"
 
 const Home = () => {
+  const location = useLocation();
+  const {pathname} = location;
+  console.log(pathname)
   return (
     <div className='home-container'>
         <div className='home-logo'>
@@ -11,13 +14,13 @@ const Home = () => {
         </div>
         <ul className="home-nav-items">
                 <li className="nav-item">
-                <Link to = "/all">all</Link>
+                <Link to = "/" className={pathname === '/' && "active"}>all</Link>
                 </li>
                 <li className="nav-item">
-                  <Link to = "/companies">Companies</Link>
+                  <Link to = "/companies" className={pathname === '/companies' && "active"}>Companies</Link>
                 </li>
                 <li className="nav-item">
-                <Link to = "/phone">phone</Link>
+                <Link to = "/phone" className={pathname === '/phone' && "active"}>phone</Link>
                 </li>
 
 

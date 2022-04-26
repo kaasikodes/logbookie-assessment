@@ -12,6 +12,19 @@
     display: flex;
     justify-content: space-between;
 }
+.contact-section .contact-content p{
+    line-height: 1.4rem;
+}
 .contact-section .contact-title{
     margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+}
+.contact-section .contact-title svg {
+    color: #01BF96;
+}
+.contact-section .contact-title {
+    
+    font-size: 1.1rem;
+    font-weight: 500;
 }
