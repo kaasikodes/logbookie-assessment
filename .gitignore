@@ -10,6 +10,7 @@
 
 # production
 /build
+/build_wtout_ts
 
 # misc
 .DS_Store
